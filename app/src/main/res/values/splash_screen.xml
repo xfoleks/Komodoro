@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Komodoro.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/komodoro</item>
+        <item name="postSplashScreenTheme">@style/Theme.Komodoro</item>
+    </style>
+</resources>
