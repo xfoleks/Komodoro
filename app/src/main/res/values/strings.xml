@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Komodoro</string>
+
+    <string name="button_register_text">Register</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="komodoro_logo_image_view_text">Komodoro Logo</string>
+    <string name="logo_name_description">Komodoro</string>
 </resources>
