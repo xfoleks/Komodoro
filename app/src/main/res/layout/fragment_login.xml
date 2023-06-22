@@ -13,7 +13,7 @@
         android:layout_height="141dp"
         android:background="@drawable/komodoro"
         android:contentDescription="@string/komodoro_logo_image_view_text"
-        app:layout_constraintBottom_toTopOf="@+id/registration_view"
+        app:layout_constraintBottom_toTopOf="@+id/logIn_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:text="@string/logo_name_description"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/registration_view"
+        app:layout_constraintBottom_toTopOf="@+id/logIn_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/registration_view"
+        android:id="@+id/logIn_view"
         android:layout_width="match_parent"
         android:layout_height="390dp"
         android:background="@drawable/registration_background"
@@ -63,7 +63,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.19"
+            app:layout_constraintVertical_bias="0.19999999"
             app:startIconDrawable="@drawable/ic_outline_account_box">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -102,41 +102,42 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/registration_button"
+            android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_register_text"
+            android:text="@string/button_login_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
-            app:layout_constraintVertical_bias="0.24000001" />
-
+            app:layout_constraintVertical_bias="0.192" />
 
         <TextView
-            android:id="@+id/signIn"
+            android:id="@+id/signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="108dp"
-            android:text="@string/sign_in_suggestion"
+            android:layout_marginStart="80dp"
+            android:text="@string/sign_up_suggestion"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/login_button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/registration_button"
-            app:layout_constraintVertical_bias="0.169" />
+            app:layout_constraintTop_toBottomOf="@+id/login_button"
+            app:layout_constraintVertical_bias="0.168" />
 
         <TextView
-            android:id="@+id/signInLink"
+            android:id="@+id/signUpLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_in_link"
+            android:text="@string/sign_up_link"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.101"
-            app:layout_constraintStart_toEndOf="@+id/signIn"
-            app:layout_constraintTop_toBottomOf="@+id/registration_button"
-            app:layout_constraintVertical_bias="0.169" />
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toEndOf="@+id/signUp"
+            app:layout_constraintTop_toBottomOf="@+id/login_button"
+            app:layout_constraintVertical_bias="0.168" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

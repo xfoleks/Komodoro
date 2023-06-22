@@ -1,6 +1,6 @@
-package edu.xfoleks.komodoro.mappers
+package edu.xfoleks.komodoro.domain.mappers
 
-import edu.xfoleks.komodoro.local.entities.UserEntity
+import edu.xfoleks.komodoro.domain.local.entities.UserEntity
 import edu.xfoleks.komodoro.domain.model.User
 
 fun UserEntity.toUser(): User = User(

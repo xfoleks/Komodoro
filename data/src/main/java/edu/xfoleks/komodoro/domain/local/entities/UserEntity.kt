@@ -1,4 +1,4 @@
-package edu.xfoleks.komodoro.local.entities
+package edu.xfoleks.komodoro.domain.local.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
