@@ -4,4 +4,6 @@ import edu.xfoleks.komodoro.domain.model.User
 
 interface UserRepository {
     suspend fun createUser(user: User)
+
+    suspend fun getUser(user: String): User
 }

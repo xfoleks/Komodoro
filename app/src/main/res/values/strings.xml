@@ -2,8 +2,16 @@
     <string name="app_name">Komodoro</string>
 
     <string name="button_register_text">Register</string>
+    <string name="button_login_text">Log In</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="komodoro_logo_image_view_text">Komodoro Logo</string>
     <string name="logo_name_description">Komodoro</string>
+    <string name="sign_up_suggestion">Haven\'t register yet?</string>
+    <string name="sign_up_link">Sign Up</string>
+    <string name="sign_in_suggestion">Already a member?</string>
+    <string name="sign_in_link">Sign In</string>
+    <string name="login_error_message">You had entered incorrect username or password!</string>
+    <string name="login_message">You successfully log in!</string>
+    <string name="registration_message">You successfully registered!</string>
 </resources>

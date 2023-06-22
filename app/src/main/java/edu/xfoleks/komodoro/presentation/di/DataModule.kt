@@ -8,8 +8,8 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import edu.xfoleks.komodoro.domain.repository.UserRepository
-import edu.xfoleks.komodoro.local.database.AppDatabase
-import edu.xfoleks.komodoro.repository.UserRepositoryImpl
+import edu.xfoleks.komodoro.domain.local.database.AppDatabase
+import edu.xfoleks.komodoro.domain.repository.UserRepositoryImpl
 import javax.inject.Singleton
 
 @Module

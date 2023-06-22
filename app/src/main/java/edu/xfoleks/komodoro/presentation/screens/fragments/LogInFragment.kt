@@ -8,30 +8,28 @@ import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import edu.xfoleks.komodoro.R
-import edu.xfoleks.komodoro.databinding.FragmentRegistrationBinding
+import edu.xfoleks.komodoro.databinding.FragmentLoginBinding
 import edu.xfoleks.komodoro.presentation.screens.viewmodels.SharedViewModel
+import java.io.File
 
 @AndroidEntryPoint
-class RegistrationFragment : Fragment() {
+class LogInFragment : Fragment() {
 
-    private lateinit var binding: FragmentRegistrationBinding
-
-    private lateinit var navController: NavController
+    private lateinit var binding: FragmentLoginBinding
 
     private val viewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentRegistrationBinding.inflate(inflater, container, false)
 
-        navController = findNavController()
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
 
         with(binding) {
             userName.doOnTextChanged { text, _, _, _ ->
@@ -46,26 +44,35 @@ class RegistrationFragment : Fragment() {
             }
         }
 
-        binding.registrationButton.setOnClickListener {
+        binding.loginButton.setOnClickListener {
             with(binding) {
                 context?.let { context ->
 
-                    viewModel.registerUser(
-                        userName.text.toString(),
-                        password.text.toString()
-                    )
+                   val result =  viewModel.logIn(
+                       userName.text.toString(),
+                       password.text.toString()
+                   )
 
-                    Toast.makeText(
-                        context,
-                        getString(R.string.registration_message),
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    if (result) {
+                        Toast.makeText(
+                            context,
+                            getString(R.string.login_message),
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                    else{
+                        Toast.makeText(
+                            context,
+                            getString(R.string.login_error_message),
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
                 }
             }
         }
 
-        binding.signInLink.setOnClickListener {
-            findNavController().navigate(R.id.navigateToLogIn)
+        binding.signUpLink.setOnClickListener {
+            findNavController().navigate(R.id.navigateToRegistration)
         }
 
         return binding.root
@@ -73,6 +80,6 @@ class RegistrationFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance() = RegistrationFragment()
+        fun newInstance() = LogInFragment()
     }
 }

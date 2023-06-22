@@ -1,9 +1,9 @@
-package edu.xfoleks.komodoro.local.database
+package edu.xfoleks.komodoro.domain.local.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import edu.xfoleks.komodoro.local.dao.UserDao
-import edu.xfoleks.komodoro.local.entities.UserEntity
+import edu.xfoleks.komodoro.domain.local.dao.UserDao
+import edu.xfoleks.komodoro.domain.local.entities.UserEntity
 
 @Database(
     version = 1,
