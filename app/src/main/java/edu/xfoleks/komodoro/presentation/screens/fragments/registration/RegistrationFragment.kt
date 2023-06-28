@@ -1,4 +1,4 @@
-package edu.xfoleks.komodoro.presentation.screens.fragments
+package edu.xfoleks.komodoro.presentation.screens.fragments.registration
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,6 @@ import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import edu.xfoleks.komodoro.R
