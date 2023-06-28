@@ -14,4 +14,14 @@
     <string name="login_error_message">You had entered incorrect username or password!</string>
     <string name="login_message">You successfully log in!</string>
     <string name="registration_message">You successfully registered!</string>
+    <string name="scheduling_management">Scheduling management</string>
+    <string name="header_text">Scheduling Management</string>
+    <string name="header_second_text">Observe your progress</string>
+    <string name="header_third_text">Work-life balance</string>
+    <string name="body_text">Scheduling enables you to prioritize important tasks and identify potential time wasters.</string>
+    <string name="body_second_text">Track your task progress. Control the time of their execution.</string>
+    <string name="body_third_text">All you need is right work-life balance! Our application was created for it.</string>
+    <string name="button_text">Next</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_start">Start</string>
 </resources>

@@ -1,4 +1,4 @@
-package edu.xfoleks.komodoro.presentation.utils.hasher
+package edu.xfoleks.komodoro.presentation.utils.verifier
 
 import at.favre.lib.crypto.bcrypt.BCrypt
 

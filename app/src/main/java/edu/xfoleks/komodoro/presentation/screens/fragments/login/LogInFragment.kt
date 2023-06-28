@@ -1,4 +1,4 @@
-package edu.xfoleks.komodoro.presentation.screens.fragments
+package edu.xfoleks.komodoro.presentation.screens.fragments.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,11 @@ import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import edu.xfoleks.komodoro.R
 import edu.xfoleks.komodoro.databinding.FragmentLoginBinding
 import edu.xfoleks.komodoro.presentation.screens.viewmodels.SharedViewModel
-import java.io.File
 
 @AndroidEntryPoint
 class LogInFragment : Fragment() {

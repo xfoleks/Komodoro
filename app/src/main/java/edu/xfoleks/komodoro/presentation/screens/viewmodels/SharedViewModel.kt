@@ -10,7 +10,7 @@ import edu.xfoleks.komodoro.presentation.mappers.toUser
 import edu.xfoleks.komodoro.presentation.mappers.toUserInfoItem
 import edu.xfoleks.komodoro.presentation.models.UserInfoItem
 import edu.xfoleks.komodoro.presentation.utils.hasher.PasswordHasher
-import edu.xfoleks.komodoro.presentation.utils.hasher.PasswordVerifier
+import edu.xfoleks.komodoro.presentation.utils.verifier.PasswordVerifier
 import javax.inject.Inject
 
 @HiltViewModel
