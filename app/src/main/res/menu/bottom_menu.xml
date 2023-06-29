@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/taskListFragment"
+        android:title="@string/tasks_menu_item_text"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_outline_list" />
+    <item
+        android:id="@+id/timerFragment"
+        app:showAsAction="ifRoom"
+        android:title="@string/timer_menu_item_text"
+        android:icon="@drawable/ic_outline_timer"/>
+    <item
+        android:id="@+id/profileFragment"
+        app:showAsAction="ifRoom"
+        android:title="@string/profile_menu_item_text"
+        android:icon="@drawable/ic_outline_account_circle" />
+</menu>
