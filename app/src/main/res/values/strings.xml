@@ -24,4 +24,7 @@
     <string name="button_text">Next</string>
     <string name="btn_finish">Finish</string>
     <string name="btn_start">Start</string>
+    <string name="tasks_menu_item_text">Tasks</string>
+    <string name="timer_menu_item_text">Timer</string>
+    <string name="profile_menu_item_text">Profile</string>
 </resources>

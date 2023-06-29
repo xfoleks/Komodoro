@@ -1,5 +1,6 @@
 package edu.xfoleks.komodoro.presentation.screens.fragments.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,16 +9,20 @@ import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import edu.xfoleks.komodoro.R
 import edu.xfoleks.komodoro.databinding.FragmentLoginBinding
+import edu.xfoleks.komodoro.presentation.screens.activities.home.HomeActivity
 import edu.xfoleks.komodoro.presentation.screens.viewmodels.SharedViewModel
 
 @AndroidEntryPoint
 class LogInFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
+
+    private lateinit var navController: NavController
 
     private val viewModel: SharedViewModel by activityViewModels()
 
@@ -52,11 +57,7 @@ class LogInFragment : Fragment() {
                    )
 
                     if (result) {
-                        Toast.makeText(
-                            context,
-                            getString(R.string.login_message),
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        startActivity(Intent(context, HomeActivity::class.java))
                     }
                     else{
                         Toast.makeText(

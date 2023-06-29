@@ -1,4 +1,4 @@
-package edu.xfoleks.komodoro.presentation.screens.activities
+package edu.xfoleks.komodoro.presentation.screens.activities.main
 
 import android.os.Bundle
 import androidx.activity.viewModels

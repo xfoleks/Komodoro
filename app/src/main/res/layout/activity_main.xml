@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.screens.activities.MainActivity">
+    tools:context=".presentation.screens.activities.main.MainActivity">
 
  <androidx.fragment.app.FragmentContainerView
      android:id="@+id/fragment_container"
@@ -16,6 +16,7 @@
      app:layout_constraintTop_toTopOf="parent"
 
      app:defaultNavHost="true"
-     app:navGraph="@navigation/navigation_graph" />
+     app:navGraph="@navigation/navigation_graph"
+     tools:layout="@layout/fragment_onboarding_tasks" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
